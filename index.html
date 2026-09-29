@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilteer</title>
+    <title>Centered Logo</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <style>
-        /* Make the body take up the full height of the browser window */
-        body {
+        /* Make the body take up the full screen height */
+        html, body {
+            height: 100%;
             margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center; /* Centers horizontally */
-            align-items: center;     /* Centers vertically */
-            background-color: #FCFAF2; /* Change to your preferred background color */
         }
 
-        /* Set a max width or size for your logo image */
+        /* Use Flexbox on the body to center content vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+
+        /* Style your logo image size */
         .logo {
             max-width: 50%;
             height: auto;
@@ -24,6 +31,7 @@
 </head>
 <body>
 
+    <!-- Replace 'logo.png' with the path to your image file -->
     <img src="bilteer_logo.png" alt="Bilteer Logo" class="logo">
 
 </body>
